@@ -1,3 +1,49 @@
+// ETX PRE-LOADER
+
+const hiddenImagePaths = [
+  'assets/IMG/home-img.png',
+  'assets/IMG/car1.png',
+  'assets/IMG/car2.png',
+  'assets/IMG/car3.png',
+  'assets/IMG/car4.png',
+  'assets/IMG/car5.png',
+  'assets/IMG/car6.png',
+  'assets/IMG/car7.png',
+  'assets/IMG/car8.png',
+  'assets/IMG/car9.png',
+  'assets/IMG/car10.png',
+];
+
+let imagesLoaded = 0;
+
+// Function to preload the hidden images
+function preloadHiddenImages() {
+    hiddenImagePaths.forEach(function (imagePath) {
+        const img = new Image();
+        img.onload = function () {
+            imagesLoaded++;
+            if (imagesLoaded === hiddenImagePaths.length) {
+                // All hidden images are loaded
+                // You can make them visible here
+                showHiddenImages();
+            }
+        };
+        img.src = imagePath;
+    });
+}
+
+// Function to make the hidden images visible
+function showHiddenImages() {
+    const hiddenImages = document.querySelectorAll(".preload-image");
+    hiddenImages.forEach(function (image) {
+        image.style.display = "block";
+    });
+
+    console.log("Images succsesfully loaded")
+}
+
+// Call the preloadHiddenImages function to start preloading
+preloadHiddenImages();
 
 
 /*=============== SCROLL HEADER ===============*/

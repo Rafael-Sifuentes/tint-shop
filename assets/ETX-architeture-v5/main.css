@@ -139,6 +139,10 @@ img{
     font-size: var(--normal-font-size);
 }
 
+.preload-image {
+    display: none;
+}
+
 /* -======= BUTTONS ========- */
 .button-fill{
     display: flex;
@@ -302,21 +306,24 @@ img{
     padding-bottom: 3rem;
     color: var(--text-color-white);
     overflow: hidden;
+    background-color: var(--body-color);
 }
 
 .home-bkgr{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: 0;
     height: 100%;
     object-fit: cover;
 }
 
 .home__container{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    z-index: 2;
 }
 
 .home__title{
@@ -404,7 +411,7 @@ img{
 
 .home-car{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     right: 0;
     top: 40%;
     transform: translateY(-50%);
