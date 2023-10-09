@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/assets/IMG/Favicon.png" type="image/x-icon">
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/ETX-architeture-v5/main.css">
+    <title>Pre-cut window tint | The Tint Shop</title>
+</head>
+<body>
+
+    <header class="header store__header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo">
+                <img src="/assets/IMG/logo.svg" alt="Main logo" class="logo">
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="store section" id="store">
+            <div class="store__container container">
+
+                <h1 class="store__title section__title">Shop pre-cut Window Tint</h1>
+                <h3 class="store__subtitle section__subtitle">Transform your ride with Premium pre-cut window tints </h3>
+
+                <button class="button-fill store__button">
+                    <a href="#about-store">Shop Now !</a>
+                </button>
+            </div>
+
+            <img src="/assets/IMG/store-bkgr.png" alt="" class="store-bkgr">
+        </section>
+
+        <section class="about__store section" id="about-store">
+
+            <div class="about__store-container container">
+
+                <div>
+                    <h2 class="about__store-title section__title">Transform your ride !</h2>
+                    <p class="store__description description">Our pre-cut tints are avaliable in:</p>
+                </div>
+
+                <div class="about__store-grid grid">
+
+                    <ul class="about__list">
+
+                        <li class="about-list-item">
+                            <i class="ri-checkbox-fill"></i>
+                            Cermaic
+                        </li>
+    
+                        <li class="about-list-item">
+                            <i class="ri-checkbox-fill"></i>
+                            50% through 5% opacity
+                        </li>
+    
+                        <li class="about-list-item">
+                            <i class="ri-checkbox-fill"></i>
+                            Most Vehicle types
+                        </li>
+    
+                        <li class="about-list-item">
+                            <i class="ri-checkbox-fill"></i>
+                            Next-day pick-up
+                        </li>
+    
+                    </ul>
+    
+                    <img src="/assets/IMG/store-img.png" alt="Pre-cut tint image" class="about__store-img">
+
+                </div>
+
+                <div class="about__pricing-container">
+                    <h2 class="pricing__title section__title">Pricing</h2>
+                    <h3 class="pricing__description section__subtitle">All pre-cut tint is priced at $75.00 Plus tax <br> An extra $10.00 for ceramic tint</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="order section">
+            <div class="order__container container">
+                <h2 class="order__title section__title">Order your custom pre-cut Tint</h2>
+                <p class="order__description description">
+                    The tint shop is currently only 
+                    accepting local pick-up orders.
+                    Please fill out the form below to
+                    place an order.
+                </p>
+
+                <div class="underline"></div>
+
+                <form class="contact-form" id="contact-form">
+
+                    <div class="form-group-a">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="contact-name" class="form__text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" class="form__text" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group-b">
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle make & model</label>
+                            <input type="contact-vehicle" placeholder="Ex :Honda Accord" id="vehicle" class="form__text" name="vehicle" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicle-year">Vehicle Year</label>
+                            <input type="contact-year" placeholder="Ex :2019" id="year" class="form__text" name="year" required>
+                        </div>
+
+                        
+                    </div>
+
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <!-- <button type="submit" class="button-fill contact__button">Start Order</button> -->
+
+                    <button type="button" class="button-fill contact__button" id="place-order-button">
+                        Start Order
+                    </button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- ============================ FOOTER ============================== -->
+    <footer class="footer section">
+        
+        <a href="https://etxsoftware.com/" target="_blank">
+            <p class="copyright">Website designed & developed by<br><span>ETX Software Development</span><br>&#169; All rights reserved</p>
+        </a>
+        
+    </footer>
+
+
+    <!-- =========================== JAVASCRIPT LINKS =============================== -->
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="/assets/ETX-architeture-v5/store.js"></script>
+</body>
+</html>

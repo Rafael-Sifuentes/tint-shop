@@ -746,6 +746,150 @@ img{
 }
 /* -=========================================================================- */
 
+/* -================================= STORE SECTION CSS  ================================- */
+.store-bkgr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.store{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    color: var(--text-color-white);
+}
+
+.store__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.store__title{
+    font-family: var(--body-font);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.store__subtitle{
+    text-align: center;
+    font-weight: var(--font-regular);
+}
+
+.store__button{
+    background-color: var(--text-color-black);
+}
+
+.about__store-container{
+    color: var(--text-color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about__store-title{
+    color: var(--text-color-white);
+    margin-bottom: 0;
+}
+
+.about__store-grid{
+    gap: 2.5rem;
+}
+
+.about__pricing-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border: 3px solid var(--primary-color);
+    border-radius: .5rem;
+}
+
+.pricing__description{
+    text-align: center;
+}
+
+.pricing__title{
+    margin-bottom: 0;
+}
+
+.order{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    color: var(--text-color-white);
+}
+
+.order__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.order__title{
+    margin-bottom: 0;
+}
+
+.order__container .underline{
+    background-color: var(--primary-color);
+    height: 2px;
+}
+
+.contact-form{
+    max-width: 700px;
+}
+
+.form__text{
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.form__text-alt{
+    font-weight: var(--font-semi-bold);
+}
+
+.form-group{
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 4px solid var(--container-color);
+    background-color: transparent;
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.contact__message{
+    font-size: var(--small-font-size);
+    position: absolute;
+    bottom: 2.8rem;
+    left: 1.5rem;
+}
+
+.contact__button{
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
 
 
 /* -================================= CSS BREAKPOINTS ================================- */
