@@ -35,3 +35,4 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener('submit', sendEmail);
 placeOrderButton.addEventListener('click', sendEmail);
+

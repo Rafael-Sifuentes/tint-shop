@@ -746,6 +746,65 @@ img{
 }
 /* -=========================================================================- */
 
+/* -================================= POP-UP SECTION CSS  ================================- */
+.popup{
+    z-index: 10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008f;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: var(--text-color-white);
+}
+
+.popup__container{
+    position: relative;
+    background-color: #00000068;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 3rem;
+    gap: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    border: 3px solid var(--primary-color);
+}
+
+.popup__title{
+    font-family: var(--title-font);
+    font-size: var(--big-font-size);
+}
+
+.popup__subtitle{
+    font-weight: var(--font-medium);
+}
+
+.popup__button{
+    background-color: var(--primary-color);
+}
+
+.close__button{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.close__button i{
+    color: var(--text-color-white);
+    font-size: var(--h1-font-size);
+}
+
+
 /* -================================= STORE SECTION CSS  ================================- */
 .store-bkgr{
     position: absolute;

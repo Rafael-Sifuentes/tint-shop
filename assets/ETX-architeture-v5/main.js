@@ -46,6 +46,8 @@ function showHiddenImages() {
 preloadHiddenImages();
 
 
+
+
 /*=============== SCROLL HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
@@ -180,3 +182,32 @@ const sr = ScrollReveal({
     distance: '200px'
   })
 
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    function hidePopup(){
+      const page = document.getElementById('pop-up')
+      page.style.display = "none"
+    }
+
+    hidePopup()
+    // Set a timeout to show the popup after 5 seconds
+    setTimeout(function () {
+      showPopup();
+    }, 7000);
+
+    // Close the popup when the close button is clicked
+    document.getElementById("close-button").addEventListener("click", function () {
+      closePopup();
+    });
+
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById("pop-up").style.display = "flex";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById("pop-up").style.display = "none";
+    }
+  });
