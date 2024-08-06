@@ -299,6 +299,16 @@ img{
 /* -======================================================================================- */
 /* -======================================================================================- */
 
+@keyframes homeButton {
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+}
+
 
 /* -================================= SECTION 1 ================================- */
 .home{
@@ -352,6 +362,8 @@ img{
     gap: 1.5rem;
     width: 100%;
     align-items: center;
+    transition: all .4s ease-in-out;
+    border: none;
 }
 
 .home__footer{
@@ -362,6 +374,8 @@ img{
 .home-button-1{
     background-color: var(--primary-color);
     width: 80%;
+    animation: homeButton 1.5s infinite;
+    transition: all .8s ease-in-out;
 }
 
 .home-button-1 a{
