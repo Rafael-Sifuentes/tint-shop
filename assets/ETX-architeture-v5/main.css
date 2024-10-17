@@ -153,6 +153,7 @@ img{
     height: max-content;
     padding: 1rem .7rem;
     border: none;
+    border-radius: .5rem;
 }
 
 .button-fill a{
@@ -230,6 +231,7 @@ img{
         right: 0;
         margin: 0 auto;
         padding: 1.8rem 2.8rem;
+        border-radius: .5rem;
     }
 
     .nav__logo{
@@ -340,11 +342,11 @@ img{
     display: flex;
     align-items: center;
     gap: .3rem;
-    font-size: 4.5rem;
+    font-size: 6.5rem;
 }
 
 .home__title span{
-    font-size: var(--h3-font-size);
+    font-size: var(--h1-font-size);
 }
 
 .home__description{
@@ -493,6 +495,7 @@ img{
     place-items: center;
     background-color: var(--container-color);
     border: none;
+    border-radius: .5rem;
 }
 
 .about-button-2 a{
@@ -531,6 +534,7 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: .5rem;
 }
 
 .layout-img-1 {
@@ -566,6 +570,10 @@ img{
     gap: 1rem;
 }
 
+.preload-image{
+    border-radius: .5rem;
+}
+
 .gallery__card .underline{
     background-color: var(--primary-color);
     height: 2px;
@@ -589,6 +597,7 @@ img{
   border-radius: .3rem;
   font-size: 2.5rem;
   color: var(--text-color);
+  border-radius: .5rem;
 }
 
 .swiper-button-prev{
@@ -736,6 +745,10 @@ img{
 
 .contact__container .social-link a{
     color: var(--text-color-black);
+}
+
+.contact-img img{
+    border-radius: .5rem;
 }
 /* -============================================================================- */
 
