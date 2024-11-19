@@ -889,6 +889,64 @@ button{
 }
 /*-============================================================================================- */
 
+/* FOOTER SECTION ============================================================================- */
+.footer{
+    background-color: #000000;
+    color: var(--text-color-w);
+    padding-top: 80px;
+    z-index: 30;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-4);
+}
+
+.footer-frame-one{
+    display: flex;
+    flex-direction: column;
+    gap: var(--mar-3);
+}
+
+.company-name-container{
+    display: flex;
+    align-items: center;
+    gap: var(--gap-2);
+}
+
+.company-name-container .img-container{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.company-name{
+    font-family: var(--title-font);
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.credits-container{
+    gap: var(--gap-1);
+}
+
+.etx{
+    color: var(--text-color-w);
+    cursor: pointer;
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-2);
+}
+
+.footer-list-item a{
+    color: var(--text-color-w);
+}
+/*-============================================================================================- */
+
 
 /* RESPONSIVE BREAKPOINTS =====================================================================- */
 
@@ -897,8 +955,8 @@ button{
 
     .home-title{
         background: linear-gradient(to right,  rgb(255, 255, 255), rgb(138, 138, 138) 50%, rgb(255, 255, 255) 100%);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         height: max-content;
         font-size: 6rem;
     }
@@ -955,6 +1013,12 @@ button{
         height: 416px;
         width: 648px;
         border-radius: var(--outer-radius);
+    }
+
+    .footer-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
