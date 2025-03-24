@@ -126,7 +126,7 @@ var swiper = new Swiper('.gallery-swiper-container', {
 
 // SCROLL REVEAL JS
 const sr = ScrollReveal({
-  distance: '50px',
+  distance: '40px',
   duration: 2000,
 })
 
